@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_11sdp"
+    app:cardCornerRadius="@dimen/_11sdp"
+    android:layout_margin="@dimen/_9sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/delete"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_9sdp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_9sdp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Category name"
+            android:layout_margin="@dimen/_9sdp">
+
+            <EditText
+                android:id="@+id/categoryname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sourgummy" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_9sdp">
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cancel"
+                android:background="@drawable/backgroundaquare"
+                android:padding="@dimen/_9sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="@dimen/_9sdp"
+                android:fontFamily="@font/poppins" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_9sdp"
+                android:background="@drawable/backgroundaquare"
+                android:padding="@dimen/_9sdp"
+                android:text="Update"
+                android:fontFamily="@font/sourgummy"
+                android:textSize="@dimen/_20sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
