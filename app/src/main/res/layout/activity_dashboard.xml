@@ -63,30 +63,66 @@
                 android:orientation="horizontal"
                 android:layout_margin="@dimen/_9sdp">
 
-                <TextView
+                <LinearLayout
                     android:id="@+id/category"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
-                    android:text="Create Category"
-                    android:layout_marginRight="@dimen/_9sdp"
-                    android:textSize="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="@color/white"
-                    android:padding="@dimen/_9sdp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_9sdp">
 
-                <TextView
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_9sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/manageservice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
-                    android:text="Manage Services"
-                    android:textSize="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="@color/white"
-                    android:padding="@dimen/_9sdp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manage"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_9sdp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -96,29 +132,66 @@
                 android:orientation="horizontal"
                 android:layout_margin="@dimen/_9sdp">
 
-                <TextView
+                <LinearLayout
                     android:id="@+id/allbokings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
-                    android:text="All Bookings"
-                    android:layout_marginRight="@dimen/_9sdp"
-                    android:textSize="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="@color/white"
-                    android:padding="@dimen/_9sdp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_9sdp">
 
-                <TextView
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="All"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bookings"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_9sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/slider"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
-                    android:text="Create Slider image"
-                    android:textSize="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="@color/white"
-                    android:padding="@dimen/_9sdp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Slider"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_9sdp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -128,28 +201,66 @@
                 android:orientation="horizontal"
                 android:layout_margin="@dimen/_9sdp">
 
-                <TextView
+                <LinearLayout
+                    android:id="@+id/notification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
-                    android:text="Create Notification"
-                    android:layout_marginRight="@dimen/_9sdp"
-                    android:textSize="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="@color/white"
-                    android:padding="@dimen/_9sdp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_9sdp">
 
-                <TextView
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notification"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_9sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
-                    android:text="Manage Login"
-                    android:textSize="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="@color/white"
-                    android:padding="@dimen/_9sdp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manage"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:paddingBottom="@dimen/_9sdp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 

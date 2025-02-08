@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".sliderimage.SliderImage">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:background="@color/themecolor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slider"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/poppins"/>
+
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/coverimg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:src="@drawable/splashservice"
+                android:layout_margin="@dimen/_9sdp"
+                android:background="@color/white"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="@dimen/_9sdp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="@dimen/_130sdp"
+                        android:src="@drawable/splashservice"
+                        android:layout_marginHorizontal="@dimen/_9sdp"
+                        android:background="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="@dimen/_130sdp"
+                        android:src="@drawable/splashservice"
+                        android:background="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="@dimen/_190sdp"
+                        android:layout_height="@dimen/_130sdp"
+                        android:src="@drawable/splashservice"
+                        android:layout_marginHorizontal="@dimen/_9sdp"
+                        android:background="@color/white"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/imagePickerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                app:backgroundTint="@color/themecolor"
+                android:layout_margin="@dimen/_9sdp"
+                android:fontFamily="@font/sourgummy"
+                android:text="Add Service Image"/>
+
+            <Button
+                android:id="@+id/uploadDataButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:layout_margin="@dimen/_9sdp"
+                android:text="Upload all images"
+                android:fontFamily="@font/sourgummy"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your ccurrent slider"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"/>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_margin="@dimen/_9sdp"
+                app:iss_period="1000"
+                app:iss_delay="0"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

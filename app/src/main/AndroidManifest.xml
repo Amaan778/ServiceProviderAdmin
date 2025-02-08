@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ServiceProviderAdmin"
         tools:targetApi="31">
         <activity
+            android:name=".notification.CreateNotificatiion"
+            android:exported="false" />
+        <activity
+            android:name=".sliderimage.SliderImage"
+            android:exported="false" />
+        <activity
             android:name=".bookings.BookingActivity"
             android:exported="false" />
         <activity
