@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginDetails">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:background="@color/themecolor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/poppins"/>
+
+    </Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your username Gmail"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundaquare"
+        android:text="admin@gmail.com"
+        android:padding="@dimen/_9sdp"
+        android:layout_marginHorizontal="@dimen/_9sdp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Password"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundaquare"
+        android:text="admin123"
+        android:padding="@dimen/_9sdp"
+        android:layout_marginHorizontal="@dimen/_9sdp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"/>
+
+</LinearLayout>
