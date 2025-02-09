@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.app.serviceprovideradmin.Category.CreateCategory
 import com.app.serviceprovideradmin.bookings.BookingActivity
+import com.app.serviceprovideradmin.login.LoginDetails
 import com.app.serviceprovideradmin.manageservice.ManageService
 import com.app.serviceprovideradmin.notification.CreateNotificatiion
 import com.app.serviceprovideradmin.sliderimage.SliderImage
@@ -20,6 +21,7 @@ class Dashboard : AppCompatActivity() {
     private lateinit var allbook:LinearLayout
     private lateinit var slider:LinearLayout
     private lateinit var notification:LinearLayout
+    private lateinit var login:LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,7 @@ class Dashboard : AppCompatActivity() {
         allbook=findViewById(R.id.allbokings)
         slider=findViewById(R.id.slider)
         notification=findViewById(R.id.notification)
+        login=findViewById(R.id.login)
 
         category.setOnClickListener {
             startActivity(Intent(this,CreateCategory::class.java))
@@ -49,6 +52,10 @@ class Dashboard : AppCompatActivity() {
 
         notification.setOnClickListener {
             startActivity(Intent(this,CreateNotificatiion::class.java))
+        }
+
+        login.setOnClickListener {
+            startActivity(Intent(this,LoginDetails::class.java))
         }
 
     }
