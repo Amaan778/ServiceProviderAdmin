@@ -27,12 +27,12 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        category=findViewById(R.id.category)
-        manage=findViewById(R.id.manageservice)
-        allbook=findViewById(R.id.allbokings)
-        slider=findViewById(R.id.slider)
-        notification=findViewById(R.id.notification)
-        login=findViewById(R.id.login)
+        category=findViewById(R.id.categorys)
+        manage=findViewById(R.id.manageservices)
+        allbook=findViewById(R.id.allbokingss)
+        slider=findViewById(R.id.sliders)
+        notification=findViewById(R.id.notifications)
+        login=findViewById(R.id.logins)
 
         category.setOnClickListener {
             startActivity(Intent(this,CreateCategory::class.java))
